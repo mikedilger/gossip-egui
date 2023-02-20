@@ -1,0 +1,13 @@
+[package]
+name = "gossip-egui"
+version = "0.1.0"
+description = "Egui stuff designed for the gossip nostr client"
+authors = ["Mike Dilger <mike@mikedilger.com>", "Daniele Tenon"]
+license = "MIT"
+repository = "https://github.com/mikedilger/gossip-egui"
+homepage = "https://github.com/mikedilger/gossip-egui"
+edition = "2021"
+
+[dependencies]
+eframe = { git = "https://github.com/mikedilger/egui", branch="gossip", features = [ "dark-light", "persistence" ] }
+egui_extras = { git = "https://github.com/mikedilger/egui", branch="gossip", features = [ "image", "svg", "tracing" ] }
